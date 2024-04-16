@@ -1,3 +1,10 @@
+## 0.4.0 (2024-04-16)
+
+### Feat
+
+- **04-day**: project solution
+- **04-day**: project definition
+
 ## 0.3.0 (2024-04-15)
 
 ### Feat
