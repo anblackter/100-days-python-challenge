@@ -1,3 +1,9 @@
+## 0.6.0 (2024-04-20)
+
+### Feat
+
+- **06-day**: maze challenge solution
+
 ## 0.5.0 (2024-04-20)
 
 ### Feat
