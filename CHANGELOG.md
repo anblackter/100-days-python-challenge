@@ -1,3 +1,14 @@
+## 0.5.0 (2024-04-20)
+
+### Feat
+
+- **06-day**: maze challenge solution
+- **06-day**: maze challenge definition
+- **06-day**: reeborg challenge solution
+- **06-day**: reeborg challenge definition
+- **05-day**: project solution, password generator
+- **05-day**: project definition
+
 ## 0.4.0 (2024-04-16)
 
 ### Feat
