@@ -15,7 +15,7 @@ while not at_goal():
         face_up()
         initial_position = False
         
-    if front_is_clear():
+    if front_is_clear() and not right_is_clear():
         move()
     elif right_is_clear():
         turn_right()
