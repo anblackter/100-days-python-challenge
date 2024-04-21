@@ -1,3 +1,23 @@
+## 0.7.0 (2024-04-20)
+
+### Feat
+
+- **07-day**: project solution
+- **07-day**: challenge 5 solution
+- **07-day**: include art and words in separate files
+- **07-day**: challenge 5 definition
+- **07-day**: challenge 4 solution
+- **07-day**: challenge 4 solution
+- **07-day**: challenge 4 definition
+- **07-day**: challenge 3 solution
+- **07-day**: challenge 3 definition
+- **07-day**: challenge 2 solution
+- **07-day**: challenge 2 definition
+- **07-day**: challenge 2 definition
+- **07-day**: challenge 1 done!
+- **07-day**: project definition
+- **07-day**: include the propose diagram to solve the game hangman in python
+
 ## 0.6.0 (2024-04-20)
 
 ### Feat
