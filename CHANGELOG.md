@@ -1,3 +1,16 @@
+## 0.8.0 (2024-04-20)
+
+### Feat
+
+- **08-day**: final caeser cipher project solution
+- **08-day**: final caeser cipher project definition
+- **08-day**: ceaser cipher challenge 3 solution
+- **08-day**: ceaser cipher challenge 3 definition
+- **08-day**: ceaser cipher challenge 2 solution
+- **08-day**: ceaser cipher challenge 2 definition
+- **08-day**: ceaser cipher challenge 1 solution
+- **08-day**: ceaser cipher challenge 1 definition
+
 ## 0.7.0 (2024-04-20)
 
 ### Feat
