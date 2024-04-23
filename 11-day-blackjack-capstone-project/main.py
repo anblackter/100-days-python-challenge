@@ -58,3 +58,94 @@
 #Hint 13: Create a function called compare() and pass in the user_score and computer_score. If the computer and user both have the same score, then it's a draw. If the computer has a blackjack (0), then the user loses. If the user has a blackjack (0), then the user wins. If the user_score is over 21, then the user loses. If the computer_score is over 21, then the computer loses. If none of the above, then the player with the highest score wins.
 
 #Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of blackjack and show the logo from art.py.
+
+
+#I choose expert difficulty
+import random
+from replit import clear
+from art import logo
+
+cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+user_hand = []
+computer_hand = []
+
+def calculate_score(hand):
+    score = 0
+    for card in hand:
+        score += card
+
+    return score
+
+def first_hand():
+    user_hand.clear()
+    computer_hand.clear()
+    user_hand.append(random.choice(cards))
+    user_hand.append(random.choice(cards))
+    computer_hand.append(random.choice(cards))
+    computer_hand.append(random.choice(cards))
+
+def append_card(hand):
+    current_score = calculate_score(hand)
+    choice = random.choice(cards)
+    if choice == 11 and current_score > 10:
+        choice = 1
+    hand.append(choice)
+
+def final_scores(user_hand, computer_hand):
+    user_score = calculate_score(user_hand)
+    computer_score = calculate_score(computer_hand)
+
+    print(f"\tYour final hand: {user_hand}, final score: {user_score}")
+    print(f"\tComputer's final hand: {computer_hand}, final score: {computer_score}")
+    if computer_score == 21:
+        print("\tYou lose. Computer has blackjack 😱")
+    elif user_score > computer_score and user_score <= 21:
+        print("\tYou win 😃")
+    elif user_score < computer_score and user_score <= 21 and computer_score <= 21:
+        print("\tYou lose 😤")
+    elif user_score == computer_score and user_score <= 21 and computer_score <= 21:
+        print("\tYou Draw 🙃")
+    elif user_score > 21:
+        print("\tYou went over. You Lose 😭")
+    elif computer_score > 21:
+        print("\tComputer's went over. You win 😁")
+
+print(logo)
+def blackjack_game():
+    more_game = input("Do you want to play a game of Blacjack? Type 'y' or 'n':")
+    if more_game != 'y':
+        return
+    else:
+        clear()
+        print(logo)
+        first_hand()
+        another_card = True
+        computer_score = calculate_score(computer_hand)
+        if computer_score == 21:
+            final_scores(user_hand, computer_hand)
+            another_card = False
+            blackjack_game()
+        while another_card:
+            print(f"\tYour cards: {user_hand}, current score: {calculate_score(user_hand)}")
+            print(f"\tComputer's first card: {computer_hand[0]}")
+            more_card = input("Type 'y' to get another card, type 'n' to pass: ")
+            if more_card != 'y':
+                another_card = False
+                computer_score = calculate_score(computer_hand)
+                while computer_score < 17:
+                    append_card(computer_hand)
+                    computer_score = calculate_score(computer_hand)
+                final_scores(user_hand, computer_hand)
+                blackjack_game()
+            else:
+                append_card(user_hand)
+                user_score = calculate_score(user_hand)
+                if user_score > 21:
+                    final_scores(user_hand, computer_hand)
+                    another_card = False
+                    blackjack_game()
+
+blackjack_game()
+
+
+
