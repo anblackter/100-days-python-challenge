@@ -1,3 +1,10 @@
+## 0.10.0 (2024-04-23)
+
+### Feat
+
+- **10-day**: project solution, calculator using functions and recursion
+- **10-day**: project definition
+
 ## 0.9.0 (2024-04-21)
 
 ### Feat
