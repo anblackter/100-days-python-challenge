@@ -1,3 +1,11 @@
+## 0.15.0 (2024-04-27)
+
+### Feat
+
+- **15-day**: teacher project solution
+- **15-day**: project solution
+- **15-day**: project definition
+
 ## 0.14.0 (2024-04-27)
 
 ### Feat
